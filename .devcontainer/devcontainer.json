@@ -15,6 +15,7 @@
     				   "terminal.integrated.fontSize": 14,
     				   "workbench.colorTheme": "GitHub Dark Dimmed",
                                    "editor.formatOnSave": true,
+				   "php.validate.executablePath": "/usr/local/bin/php"
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
