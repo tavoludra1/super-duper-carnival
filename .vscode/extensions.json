@@ -31,8 +31,6 @@
         "rexshi.phpdoc-comment-vscode-plugin",
         // install php namespace resolver extension mehedi hassan
         "mehedidracula.php-namespace-resolver",
-        // install beautify extension hookyqr
-        "hookyqr.beautify",
         // install .env extension mikestead
         "mikestead.dotenv",
         // install paste json as code extension quicktype
