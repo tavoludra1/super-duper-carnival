@@ -1,0 +1,75 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/php",
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "composer install",
+    "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "latest"
+        },
+        "vscode": {
+            "settings": {
+                "editor.fontSize": 15,
+                "terminal.integrated.fontSize": 14,
+                "workbench.colorTheme": "GitHub Dark Dimmed",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "octref.vetur",
+                "stylelint.vscode-stylelint",
+                // install copilot extension
+                "github.copilot",
+                // install laravel artisan extension
+                "ryannaddy.laravel-artisan",
+                // install laravel blade snippets extension winnie lin
+                "onecentlin.laravel-blade",
+                // install laravel blade spacer extension austenc
+                "austenc.laravel-blade-spacer",
+                // install laravel extra intellisense extension
+                "amiralizadeh9480.laravel-extra-intellisense",
+                // install php intelliphense extension
+                "bmewburn.vscode-intelephense-client",
+                // install laravel goto view extension codingyu
+                "codingyu.laravel-goto-view",
+                // install laravel-goto-controller extension
+                "stef-k.laravel-goto-controller",
+                // install laravel snippets extension winnie lin
+                "onecentlin.laravel5-snippets",
+                // install laravel-goto-components extension naoray
+                "naoray.laravel-goto-components",
+                // install php docBlocker extension neil brayfield
+                "neilbrayfield.php-docblocker",
+                // install php doc Commenter extension rex shi
+                "rexshi.phpdoc-comment-vscode-plugin",
+                // install php namespace resolver extension mehedi hassan
+                "mehedidracula.php-namespace-resolver",
+                // install .env extension mikestead
+                "mikestead.dotenv",
+                // install paste json as code extension quicktype
+                "quicktype.quicktype",
+                // install tailwinds css intellisense extension tailwind labs
+                "bradlc.vscode-tailwindcss",
+                // install databaseclient extension cweijan
+                "cweijan.vscode-mysql-client2"
+            ],
+        },
+    },
+    "postAttachCommand": {
+        "server": "php -S 0.0.0.0:8080"
+    },
+    "portsAttributes": {
+        "8000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [
+        8000
+    ]
+}
