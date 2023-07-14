@@ -1,2 +1,2 @@
 # super-duper-carnival
-Proyecto Django Codespace
+Proyecto laravel
