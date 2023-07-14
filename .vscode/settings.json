@@ -2,48 +2,5 @@
     "editor.fontSize": 15,
     "terminal.integrated.fontSize": 14,
     "workbench.colorTheme": "GitHub Dark Dimmed",
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-tslint-plugin",
-        "octref.vetur",
-        "stylelint.vscode-stylelint",
-        // install copilot extension
-        "github.copilot",
-        // install laravel artisan extension
-        "ryannaddy.laravel-artisan",
-        // install laravel blade snippets extension winnie lin
-        "onecentlin.laravel-blade",
-        // install laravel blade spacer extension austenc
-        "austenc.laravel-blade-spacer",
-        // install laravel extra intellisense extension
-        "amiralizadeh9480.laravel-extra-intellisense",
-        // install php intelliphense extension
-        "bmewburn.vscode-intelephense-client",
-        // install laravel goto view extension codingyu
-        "codingyu.laravel-goto-view",
-        // install laravel-goto-controller extension
-        "stef-k.laravel-goto-controller",
-        // install laravel snippets extension winnie lin
-        "onecentlin.laravel5-snippets",
-        // install laravel-goto-components extension naoray
-        "naoray.laravel-goto-components",
-        // install php docBlocker extension neil brayfield
-        "neilbrayfield.php-docblocker",
-        // install php doc Commenter extension rex shi
-        "rexshi.phpdoc-comment-vscode-plugin",
-        // install php namespace resolver extension mehedi hassan
-        "mehedidracula.php-namespace-resolver",
-        // install beautify extension hookyqr
-        "hookyqr.beautify",
-        // install .env extension mikestead
-        "mikestead.dotenv",
-        // install paste json as code extension quicktype
-        "quicktype.quicktype",
-        // install tailwinds css intellisense extension tailwind labs
-        "bradlc.vscode-tailwindcss",
-        // install databaseclient extension cweijan
-        "cweijan.vscode-mysql-client2",
-    ],
     "editor.formatOnSave": true,
 }
