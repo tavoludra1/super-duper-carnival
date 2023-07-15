@@ -1,0 +1,21 @@
+
+name: Deploy Application
+
+on:
+    push:
+      branches:
+        - instalacion-laravel
+
+
+jobs:
+    create-deployment-artifacts:
+        
+        name: Create Deployment Artifacts
+        runs-on: ubuntu-latest
+        steps:
+                - name: Checkout
+                  uses: actions/checkout@v2
+                - name: Compile CSS and Javascript
+                  run: |
+                    npm install
+                    npm run production
