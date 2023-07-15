@@ -1,22 +1,20 @@
-name: Static Analysis
- 
-on: [push]
- 
+name: Aplicacion Desplegada
+
+# Despliegue de la aplicacion
+on:
+  push:
+    branches:
+      - instalacion-laravel
+
 jobs:
-  phpstan:
-    name: phpstan
+  create-deployments-artifacts:
+    name: Crear artefactos de despliegue
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
- 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          coverage: none
- 
-      - name: Install composer dependencies
-        run: composer install -n --prefer-dist
- 
-      - name: Run Static Analysis
-        run: ./vendor/bin/phpstan --error-format=github
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Compile CSS and Javascript
+        run: |
+          npm install
+          npm run production
